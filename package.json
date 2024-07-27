@@ -1,0 +1,12 @@
+{
+  "name": "daily-expenses-sharing-app",
+  "version": "1.0.0",
+  "description": "A backend service for a daily expenses sharing application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "hardik sharma",
+  "license": "ISC"
+}
