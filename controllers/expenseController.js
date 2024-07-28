@@ -39,6 +39,4 @@ async function getOverallExpenses(req, res) {
     }
 }
 
-
 module.exports = { addExpense, getUserExpenses, getOverallExpenses };
-
