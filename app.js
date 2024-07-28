@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const userRoutes = require('./routes/userRoutes');
+const expenseRoutes = require('./routes/expenseRoutes');
 
 require('dotenv').config();
 
@@ -10,6 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use('/api', userRoutes);
+app.use('/api', expenseRoutes);
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
